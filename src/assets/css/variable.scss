@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "YOUSHE";
+    src: url("../fonts/YOUSHE.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "PANGMEN";
+    src: url("../fonts/PANGMEN.ttf");
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ALIBABAM";
+    src: url("../fonts/Alibaba-PuHuiTi-Medium.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ALIBABAR";
+    src: url("../fonts/Alibaba-PuHuiTi-Regular.ttf");
+    font-display: swap;
+}
+
+.ALIBABAR {
+    font-family: "ALIBABAR";
+}
+.ALIBABAM {
+    font-family: "ALIBABAM";
+}
+.PANGMEN {
+    font-family: "PANGMEN";
+}
+
+.YOUSHE {
+    font-family: "YOUSHE";
+}
+
+.full {
+    width: 1920rem;
+    // height: 100%;
+    height: 1080rem;
+}
+
+.part-pd {
+    padding: 24rem;
+    box-sizing: border-box;
+}
+.part-border {
+    // border-style: solid;
+    border-image-source: url("@/assets/images/bg-part-border.png");
+    border-image-slice: 0 0 0 0 fill;
+    border-image-repeat: round;
+}
+.f-16 {
+    font-size: 16rem;
+}
+
+.f-18 {
+    font-size: 18rem;
+}
+
+.f-20 {
+    font-size: 20rem;
+}
+
+.f-22 {
+    font-size: 22rem;
+}
+
+.f-24 {
+    font-size: 24rem;
+}
+
+.f-26 {
+    font-size: 26rem;
+}
+
+.f-28 {
+    font-size: 28rem;
+}
+
+.f-w500 {
+    font-weight: 500;
+}
+
+.f-w600 {
+    font-weight: 600;
+}
+
+$font-orange: #FFC24B;
+$font-normal: #E5FBFF;
+
+.orange {
+    color: $font-orange;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10rem);
+        -webkit-transform: translateY(-10rem);
+        -moz-transform: translateY(-10rem);
+        -ms-transform: translateY(-10rem);
+        -o-transform: translateY(-10rem);
+    }
+
+    100% {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+}
+
+@mixin fillTextColor($color: linear-gradient(180deg, #F5FCFF 0%, #64D3EB 100%)) {
+    background: $color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin flex($flow: row, $justify: space-between, $align: center) {
+    display: flex;
+    flex-flow: $flow nowrap;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin borderImg($url) {
+    border-image-source: $url;
+    border-image-slice: 0 0 0 0 fill;
+    border-image-repeat: round;
+}
