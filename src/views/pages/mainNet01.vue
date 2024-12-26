@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-28 09:16:55
- * @LastEditTime: 2024-11-29 10:21:09
+ * @LastEditTime: 2024-12-24 16:20:39
 -->
 <template>
     <PageLayout title="主网发展规划技术">
@@ -15,7 +15,7 @@
                         运行方式安排与调试
                     </div>
                     <div class="text f-20 f-w500">
-                        开展方式拓扑结构、负荷水平、电源分布、无功补偿、潮流功率与电压等，潮流调整、计算与结果分析。
+                        对网架结构、负荷水平、电源出力、无功补偿进行安排与调试，并对计算结果展示与分析。
                     </div>
                 </div>
                 <div class="item item2">
@@ -40,6 +40,7 @@
 </template>
 <script setup lang="ts">
 import PageLayout from "../components/pageLayout.vue"
+import BgBorder from "../components/energyCenter/BgBorder.vue"
 defineProps({
   animatedCss: {
     type: String,
@@ -78,8 +79,8 @@ defineProps({
       }
       .text {
         width: 100%;
-        height: 152rem;
-        padding: 16rem 20rem;
+        // height: 152rem;
+        padding: 22rem 20rem;
         margin-top: 33rem;
         border: 1px solid #2377a2;
         line-height: 40rem;

@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-23 15:34:24
- * @LastEditTime: 2024-12-13 15:36:58
+ * @LastEditTime: 2024-12-24 13:16:52
 -->
 <template>
     <div ref="pieRef" class="pie-box" />
@@ -20,37 +20,65 @@ const chartData = computed(() => {
   return [
     {
       value: POWERPIEDATA[props.timeSelect][0],
-      name: "原火电出力",
+      name: "火电厂",
       itemStyle: {
         color: "#147EE1",
       },
     },
     {
       value: POWERPIEDATA[props.timeSelect][1],
-      name: "新增800万火电出力",
+      name: "燃气电厂",
       itemStyle: {
         color: "#29C2FF",
       },
     },
     {
       value: POWERPIEDATA[props.timeSelect][2],
-      name: "受端储能充电",
+      name: "水电站",
       itemStyle: {
-        color: "#9ED241",
+        color: "#AEEB41",
       },
     },
     {
       value: POWERPIEDATA[props.timeSelect][3],
-      name: "受端储能放电",
+      name: "蓄能电站",
+      itemStyle: {
+        color: "#FFA32C",
+      },
+    },
+    {
+      value: POWERPIEDATA[props.timeSelect][4],
+      name: "变电站",
       itemStyle: {
         color: "#FFDA00",
       },
     },
     {
       value: POWERPIEDATA[props.timeSelect][4],
-      name: "受端净负荷",
+      name: "风电场",
       itemStyle: {
-        color: "#AA4DD3",
+        color: "#B765FF",
+      },
+    },
+    {
+      value: POWERPIEDATA[props.timeSelect][4],
+      name: "光伏电站",
+      itemStyle: {
+        color: "#5F71FF",
+      },
+    },
+    {
+      value: POWERPIEDATA[props.timeSelect][4],
+      name: "电化学储能",
+      itemStyle: {
+        color: "#9BFF6A",
+      },
+    },
+    {
+      value: POWERPIEDATA[props.timeSelect][4],
+      name: "储能",
+      itemStyle: {
+        color: "#FF6ADF",
       },
     },
   ]
@@ -62,7 +90,7 @@ const pieRef = shallowRef()
 const setOptions = () => {
   const option = {
     title: {
-      text: "万千瓦时",
+      text: "兆瓦",
       textStyle: {
         color: "rgba(255,255,255,0.85)",
         fontSize: 16,
@@ -72,7 +100,7 @@ const setOptions = () => {
     },
     legend: {
       orient: "vertical",
-      top: "middle",
+      top: 30,
       right: 20,
       itemWidth: 7,
       itemHeight: 7,
@@ -81,7 +109,7 @@ const setOptions = () => {
       textStyle: {
         rich: {
           a: {
-            width: 180,
+            width: 150,
             color: '#fff'
           },
           b: {

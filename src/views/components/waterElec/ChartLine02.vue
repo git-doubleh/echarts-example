@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-23 15:34:24
- * @LastEditTime: 2024-11-08 11:10:31
+ * @LastEditTime: 2024-12-17 10:48:05
 -->
 <template>
     <div ref="lineRef" class="line-box" />
@@ -41,7 +41,7 @@ const setOptions = () => {
       show: true,
       trigger: "axis",
       axisPointer: {
-        type: "shadow",
+        type: "cross",
       },
       backgroundColor: "rgba(7, 16, 45, 0.70)",
       borderColor: "#165B82",

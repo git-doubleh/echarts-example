@@ -1,7 +1,7 @@
 /*
  * @Description: 自适应
  * @Date: 2024-10-15 09:40:09
- * @LastEditTime: 2024-10-15 10:42:30
+ * @LastEditTime: 2024-12-20 10:25:48
  */
 export const resize = () => {
   const clientWidth =

@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-29 09:17:30
- * @LastEditTime: 2024-12-13 10:49:14
+ * @LastEditTime: 2024-12-20 11:22:24
 -->
 <template>
     <PageLayout title="主网发展规划技术应用">
@@ -11,16 +11,16 @@
                 <div class="select">
                     <ASelect v-model="timeSelect" style="width: 265rem" popup-container=".app-container">
                         <AOption :value="0">
-                            8点
+                            8点 - 丰午高
                         </AOption>
                         <AOption :value="1">
-                            11点
+                            8点 - 丰晚高
                         </AOption>
                         <AOption :value="2">
-                            14点
+                            8点 - 枯午高
                         </AOption>
                         <AOption :value="3">
-                            17点
+                            8点 - 枯晚高
                         </AOption>
                     </ASelect>
                 </div>

@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-19 15:21:23
- * @LastEditTime: 2024-11-08 11:10:13
+ * @LastEditTime: 2024-12-17 10:46:40
 -->
 <template>
     <div class="map-box">
@@ -29,8 +29,6 @@ const setOptions = () => {
       bottom: 70,
       itemWidth: 10,
       align: "left",
-      //   z: 10,
-      //   zLevel: 10,
       orient: "horizontal",
       textStyle: {
         color: "rgba(255, 255, 255, 0.85)",
@@ -44,20 +42,20 @@ const setOptions = () => {
       zoom: 1.3, //放大缩小
       z: 1,
       label: {
-        normal: {
-          show: false,
-        },
-        emphasis: {
-          show: false,
-        },
+        show: false,
       },
       itemStyle: {
-        normal: {
-          areaColor: "transparent",
+        areaColor: "transparent",
+        borderColor: "transparent",
+      },
+      emphasis: {
+        label: {
+          show: false
         },
-        emphasis: {
+        itemStyle: {
           areaColor: "transparent",
-        },
+          borderColor: "tranparent",
+        }
       },
     },
     series: [
@@ -98,7 +96,7 @@ onMounted(() => {
     position: absolute;
     bottom: 100rem;
     left: 0;
-    color: #FFF;
+    color: #fff;
     line-height: 28rem;
   }
   .echart-map {
