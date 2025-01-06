@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-23 15:34:24
- * @LastEditTime: 2024-12-13 10:38:15
+ * @LastEditTime: 2025-01-06 14:17:49
 -->
 <template>
     <div ref="lineRef" class="line-box" />
@@ -17,16 +17,7 @@ const props = defineProps({
 })
 const line = shallowRef()
 const lineRef = shallowRef()
-const yearList = ref([
-  "2016",
-  "2017",
-  "2018",
-  "2019",
-  "2020",
-  "2021",
-  "2022",
-  "2023",
-])
+const yearList = ref(["2017", "2018", "2019", "2020", "2021", "2022", "2023"])
 
 const setOptions = () => {
   const option = {

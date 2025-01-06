@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-20 13:25:58
- * @LastEditTime: 2024-12-12 09:59:09
+ * @LastEditTime: 2025-01-06 14:27:11
 -->
 <template>
     <div ref="barRef" class="bar" />
@@ -59,7 +59,7 @@ const setOptions = () => {
           color: "transparent", // 虚线颜色
         },
       },
-      data: [2015,2016,2017, 2018, 2019, 2020, 2021, 2022, 2023],
+      data: [2019, 2020, 2021, 2022, 2023, 2024],
     },
     yAxis: {
       type: "value",
@@ -89,11 +89,11 @@ const setOptions = () => {
         },
         markLine: {
           label: {
-            show: false
+            show: false,
           },
           lineStyle: {
             type: "dashed",
-            color: '#FFC24B'
+            color: "#FFC24B",
           },
           data: [[{ type: "min" }, { type: "max" }]],
         },

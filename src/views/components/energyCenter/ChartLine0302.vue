@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-23 15:34:24
- * @LastEditTime: 2024-12-11 11:01:24
+ * @LastEditTime: 2025-01-06 14:10:29
 -->
 <template>
     <div ref="lineRef" class="line-box" />
@@ -52,7 +52,7 @@ const setOptions = () => {
     },
     xAxis: {
       type: "category",
-      data: [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023],
+      data: [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024],
       axisLabel: {
         color: "#fff",
       },

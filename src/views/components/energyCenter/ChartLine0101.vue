@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-23 15:34:24
- * @LastEditTime: 2024-12-11 11:01:33
+ * @LastEditTime: 2025-01-06 14:41:24
 -->
 <template>
     <div ref="lineRef" class="line-box" />
@@ -43,7 +43,11 @@ const setOptions = () => {
     },
     xAxis: {
       type: "category",
-      data: [1997, 1999, 2011, 2013, 2015, 2017, 2019, 2021, 2023],
+      data: [
+        1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008,
+        2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020,
+        2021, 2022, 2023,
+      ],
       axisLabel: {
         color: "#fff",
       },
@@ -53,11 +57,14 @@ const setOptions = () => {
     },
     yAxis: {
       type: "value",
+      min: 0,
+      max: 60,
+      interval: 20,
       axisLabel: {
         color: "#fff",
         formatter: (value) => {
-            return `${value}%`
-        }
+          return `${value}%`
+        },
       },
       splitLine: {
         lineStyle: {
@@ -79,7 +86,7 @@ const setOptions = () => {
         itemStyle: {
           color: "#55FFE0",
         },
-        data: props.chartData.get('全国'),
+        data: props.chartData.get("全国"),
       },
       {
         name: "江苏",
@@ -87,7 +94,7 @@ const setOptions = () => {
         itemStyle: {
           color: "#FFF426",
         },
-        data: props.chartData.get('江苏'),
+        data: props.chartData.get("江苏"),
       },
       {
         name: "浙江",
@@ -95,7 +102,7 @@ const setOptions = () => {
         itemStyle: {
           color: "#4888FF",
         },
-        data: props.chartData.get('浙江'),
+        data: props.chartData.get("浙江"),
       },
       {
         name: "山东",
@@ -103,15 +110,15 @@ const setOptions = () => {
         itemStyle: {
           color: "#26FF47",
         },
-        data: props.chartData.get('山东'),
+        data: props.chartData.get("山东"),
       },
       {
-        name: "广州",
+        name: "广东",
         type: "line",
         itemStyle: {
           color: "#FFB526",
         },
-        data: props.chartData.get('广州'),
+        data: props.chartData.get("广东"),
       },
       {
         name: "四川",
@@ -119,7 +126,7 @@ const setOptions = () => {
         itemStyle: {
           color: "#55FFE0",
         },
-        data: props.chartData.get('四川'),
+        data: props.chartData.get("四川"),
       },
     ],
   }

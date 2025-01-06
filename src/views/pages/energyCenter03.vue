@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-25 10:01:27
- * @LastEditTime: 2024-12-13 09:14:14
+ * @LastEditTime: 2025-01-06 14:08:21
 -->
 <template>
     <PageLayout title="四川用电负荷特性分析">
@@ -20,7 +20,7 @@
                                 年均增速
                             </p>
                             <div class="pie-box">
-                                <ChartGuage0301 :chart-data="8.18" />
+                                <ChartGuage0301 :chart-data="8.80" />
                             </div>
                         </div>
                         <div class="part-chart">

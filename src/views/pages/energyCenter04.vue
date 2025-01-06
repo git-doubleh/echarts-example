@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-25 10:01:27
- * @LastEditTime: 2024-12-13 09:17:54
+ * @LastEditTime: 2025-01-06 14:24:56
 -->
 <template>
     <PageLayout title="四川绿色低碳产业发展">
@@ -31,7 +31,7 @@
                             <Process title="世界资源占比" :num="6.1" />
                         </div>
                         <div class="process-item">
-                            <Process title="全国资源占比" :num="90.2" />
+                            <Process title="全国资源占比" :num="57.2" />
                         </div>
                     </div>
                 </BgBorder>

@@ -25,28 +25,28 @@ const option = ref()
 const optionData = reactive([
   {
     name: "第一产业",
-    value: 10,
+    value: 34.3,
     itemStyle: {
       color: "#0783FA",
     },
   },
   {
     name: "第二产业",
-    value: 20,
+    value: 2326.4,
     itemStyle: {
       color: "#07D2FA",
     },
   },
   {
     name: "第三产业",
-    value: 20,
+    value: 692.5,
     itemStyle: {
       color: "#20E6A4",
     },
   },
   {
     name: "城乡居民生活",
-    value: 30,
+    value: 658.1,
     itemStyle: {
       color: "#FFD15C",
     },

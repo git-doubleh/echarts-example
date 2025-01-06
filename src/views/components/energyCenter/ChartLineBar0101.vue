@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-20 13:25:58
- * @LastEditTime: 2024-12-09 11:30:11
+ * @LastEditTime: 2025-01-06 09:21:40
 -->
 <template>
     <div ref="barRef" class="bar" />
@@ -21,7 +21,7 @@ const pie = shallowRef()
 const setOptions = () => {
   const option = {
     title: {
-      text: "万元",
+      text: "万亿",
       textStyle: {
         fontSize: 14,
         color: "rgba(255,255,255,0.85)",
@@ -51,9 +51,9 @@ const setOptions = () => {
     },
     grid: {
       top: "20%",
-      left: "15%",
+      left: "5%",
       bottom: "15%",
-      right: "5%",
+      right: "15%",
     },
     xAxis: {
       type: "category",
@@ -73,24 +73,39 @@ const setOptions = () => {
       },
       data: [2017, 2018, 2019, 2020, 2021, 2022, 2023],
     },
-    yAxis: {
-      type: "value",
-      axisLine: {
-        show: false,
-      },
-      axisTick: {
-        show: false,
-      },
-      axisLabel: {
-        color: "#CEF1F6",
-      },
-      splitLine: {
-        lineStyle: {
-          type: 'dashed',
-          color: "rgba(255,255,255,0.24)", // 虚线颜色
+    yAxis: [
+      {
+        type: "value",
+        axisLine: {
+          show: false,
+        },
+        axisTick: {
+          show: false,
+        },
+        axisLabel: {
+          color: "#CEF1F6",
+        },
+        splitLine: {
+          lineStyle: {
+            type: "dashed",
+            color: "rgba(255,255,255,0.14)", // 虚线颜色
+          },
         },
       },
-    },
+      {
+        type: "value",
+        axisLabel: {
+          color: "#fff",
+          formatter: "{value} %",
+        },
+        splitLine: {
+          lineStyle: {
+            type: "dashed",
+            color: "RGBA(255, 255, 255, .2)",
+          },
+        },
+      },
+    ],
     series: [...props.chartData],
   }
   pie.value.setOption(option, true)

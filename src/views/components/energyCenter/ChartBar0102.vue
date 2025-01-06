@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-20 13:25:58
- * @LastEditTime: 2024-12-09 11:21:03
+ * @LastEditTime: 2025-01-06 09:51:48
 -->
 <template>
     <div ref="barRef" class="bar" />
@@ -18,7 +18,7 @@ const props = defineProps({
 const barRef = shallowRef()
 const pie = shallowRef()
 
-const datayAxis = shallowRef([2019, 2020, 2021, 2022, 2023])
+const datayAxis = shallowRef([2017, 2018, 2019, 2020, 2021, 2022, 2023])
 
 const renderMarker = (val) => {
   return `<span style="display:inline-block;margin-right:4px;border-radius:10px;width:10px;height:10px;background-color:${props.chartData[val].itemColor[1]};"></span>`
@@ -76,7 +76,7 @@ const setOptions = () => {
       axisLine: {
         show: true,
       },
-      data: datayAxis.value,
+      data: datayAxis.value.reverse(),
       axisTick: {
         show: false,
       },
@@ -96,7 +96,8 @@ const setOptions = () => {
             { offset: 1, color: "#1665FF" },
           ]),
         },
-        data: [...props.chartData],
+        // eslint-disable-next-line vue/no-mutating-props
+        data: props.chartData.reverse(),
       },
     ],
   }

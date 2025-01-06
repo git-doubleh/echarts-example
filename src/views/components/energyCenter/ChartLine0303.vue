@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-23 15:34:24
- * @LastEditTime: 2024-12-11 12:01:40
+ * @LastEditTime: 2025-01-06 14:39:25
 -->
 <template>
     <div ref="lineRef" class="line-box" />
@@ -67,6 +67,9 @@ const setOptions = () => {
     yAxis: [
       {
         type: "value",
+        min: 0,
+        max: 8000,
+        interval: 1600,
         axisLabel: {
           color: "#fff",
         },
@@ -79,6 +82,9 @@ const setOptions = () => {
       },
       {
         type: "value",
+        min: 0, 
+        max: 250,
+        interval: 50,
         axisLabel: {
           color: "#fff",
         },

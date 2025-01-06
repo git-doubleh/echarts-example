@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-20 13:25:58
- * @LastEditTime: 2024-12-11 14:18:01
+ * @LastEditTime: 2025-01-06 14:12:51
 -->
 <template>
     <div ref="barRef" class="bar" />
@@ -59,7 +59,7 @@ const setOptions = () => {
           color: "transparent", // 虚线颜色
         },
       },
-      data: [2017, 2018, 2019, 2020, 2021, 2022, 2023],
+      data: [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024],
     },
     yAxis: {
       type: "value",

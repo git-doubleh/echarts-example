@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-20 13:25:58
- * @LastEditTime: 2024-12-09 13:28:27
+ * @LastEditTime: 2025-01-06 09:53:48
 -->
 <template>
     <div ref="barRef" class="bar" />
@@ -42,7 +42,7 @@ const setOptions = () => {
     },
     grid: {
       top: "20%",
-      left: "5%",
+      left: "10%",
       bottom: "15%",
       right: "5%",
     },

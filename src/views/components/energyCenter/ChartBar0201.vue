@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-20 13:25:58
- * @LastEditTime: 2024-12-11 13:08:16
+ * @LastEditTime: 2025-01-06 10:32:27
 -->
 <template>
     <div ref="barRef" class="bar" />
@@ -95,7 +95,7 @@ const setOptions = () => {
     },
     series: [
       {
-        name: "四川",
+        name: "全国",
         type: "bar",
         barWidth: 16,
         itemStyle: {
@@ -104,7 +104,7 @@ const setOptions = () => {
         data: PERSONUSEDPOWERDATA.get("全国"),
       },
       {
-        name: "全国",
+        name: "四川",
         type: "bar",
         barWidth: 16,
         itemStyle: {

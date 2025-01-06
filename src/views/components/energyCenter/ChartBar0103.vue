@@ -70,7 +70,7 @@ const setOptions = () => {
           color: "transparent", // 虚线颜色
         },
       },
-      data: ["国民生产总值", "投资", "消费", "进出口", "规上工业增加值"],
+      data: ["投资", "消费", "进出口", "规上工业增加值"],
     },
     yAxis: {
       type: "value",

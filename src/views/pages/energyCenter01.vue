@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-25 10:01:27
- * @LastEditTime: 2024-12-13 09:21:48
+ * @LastEditTime: 2025-01-06 09:55:47
 -->
 <template>
     <PageLayout title="四川经济社会发展情况分析">
@@ -9,7 +9,7 @@
             <div class="top">
                 <BgBorder title="四川GDP总量" width="500rem" height="285rem">
                     <div class="chart-box">
-                        <ChartBar0101 :chart-data="GDPData" />
+                        <ChartLineBar0101 :chart-data="GDPData" />
                     </div>
                 </BgBorder>
                 <BgBorder title="四川人均GDP" width="500rem" height="285rem">
@@ -69,7 +69,7 @@
 import { onMounted, ref } from "vue"
 import PageLayout from "../components/pageLayout.vue"
 import BgBorder from "../components/energyCenter/BgBorder.vue"
-import ChartBar0101 from "../components/energyCenter/ChartBar0101.vue"
+import ChartLineBar0101 from "../components/energyCenter/ChartLineBar0101.vue"
 import ChartBar0102 from "../components/energyCenter/ChartBar0102.vue"
 import ChartBar0103 from "../components/energyCenter/ChartBar0103.vue"
 import ChartBar0104 from "../components/energyCenter/ChartBar0104.vue"
@@ -110,13 +110,19 @@ onMounted(() => {
         data: GDPDATA.get("四川"),
       },
       {
-        name: "全国",
-        type: "bar",
-        barWidth: 16,
-        itemStyle: {
-          color: "#327AFF",
+        name: "增速",
+        type: "line",
+        showSymbol: false,
+        yAxisIndex: 1,
+        tooltip: {
+          valueFormatter: function (value) {
+            return value + "%"
+          },
         },
-        data: GDPDATA.get("全国"),
+        itemStyle: {
+          color: "#FFF426",
+        },
+        data: GDPDATA.get("增速"),
       },
     ]
     GDPDataPerson.value = GDPDATAPERSON
