@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-22 10:32:21
- * @LastEditTime: 2024-11-08 10:54:27
+ * @LastEditTime: 2025-01-10 11:22:07
 -->
 <template>
     <div class="out-table">
@@ -200,6 +200,7 @@ onMounted(() => {
   }
   :deep(.arco-table-td-content) {
     text-align: center;
+    word-break: keep-all;
   }
 }
 

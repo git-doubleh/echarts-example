@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-29 14:34:59
- * @LastEditTime: 2024-11-29 10:26:32
+ * @LastEditTime: 2025-01-08 14:10:15
 -->
 <template>
     <PageLayout title="主网发展规划技术应用">
@@ -17,7 +17,7 @@
             <div class="content">
                 <div class="left" />
                 <div class="right">
-                    <PartSubTitle title="短路电流计算结果" is-fill />
+                    <PartSubTitle title="短路电流计算结果" sub-title="千安" is-fill />
                     <div class="hr">
                         <span class="h-item item f-18 f-w500">变电站</span>
                         <span class="h-item item f-18 f-w500">网架优化前</span>

@@ -3,4 +3,5 @@ node_modules
 src/assets
 public
 dist
+board
 .eslintrc.js

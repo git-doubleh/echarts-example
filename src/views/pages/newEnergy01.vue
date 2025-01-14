@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-18 13:41:59
- * @LastEditTime: 2024-12-05 09:18:43
+ * @LastEditTime: 2025-01-10 14:08:29
 -->
 <template>
     <PageLayout title="四川新能源出力特性分析">
@@ -9,7 +9,7 @@
             <div class="desc">
                 <DescTitle title="研究方法" />
                 <div class="desc-content f-22 f-w500">
-                    新能源出力具有<span class="orange f-w500">随机性、波动性</span>，合理分析其出力统计特性是开展电力供需分析、新能源和电网规划的关键数据基础。本研究基于全省已投产风电、光伏历史出力数据，参考构建包括<span
+                    基于全省已投产风电、光伏历史出力数据，构建包括<span
                         class="orange f-w500"
                     >利用小时、保证出力率、有效容量系数</span>等新能源电力、电量特性分析指标体系，对多时空尺度和多运行场景下新能源出力统计特性开展量化分析。
                 </div>
@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="middle">
-                    <ChartMap />
+                    <ChartMap :tab-selected-idx="tabSelectedIdx" />
                     <div class="tabs-box">
                         <TabsBtn
                             :tabs="tabs"

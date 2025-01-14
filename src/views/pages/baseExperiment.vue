@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-15 15:16:53
- * @LastEditTime: 2024-12-09 09:09:25
+ * @LastEditTime: 2025-01-09 15:52:34
 -->
 <template>
     <PageLayout title="实验室基本情况">
@@ -29,7 +29,7 @@
                         实验室团队规模
                     </div>
                     <div class="text sameText f-16 f-w500">
-                        实验室团队共35人，其中获得博士学位的有18人，占比超50%。天府青城计划人才1人、国网公司青年托举人才1人、省公司高级专家1人、雏鹰3人、教授级高级工程师3人。
+                        实验室团队共35人，其中获得博士学位的有18人，占比超50%。天府青城计划人才1人、国网公司青年托举人才1人、省公司高级专家1人、电力雏鹰5人、青年托举2人、教授级高级工程师3人。
                     </div>
                 </div>
                 <div class="pie">
@@ -68,7 +68,7 @@
                             </div>
                             <div class="item">
                                 <img src="@/assets/images/experiment/tip1.png" class="img">
-                                <span class="text f-16 f-w500">四川省能源局—四川省十四五电力发展中期评估。</span>
+                                <span class="text f-16 f-w500">四川省能源局—四川省十四五电力发展中期评估</span>
                             </div>
                             <div class="item">
                                 <img src="@/assets/images/experiment/tip1.png" class="img">
@@ -81,7 +81,7 @@
                         <div class="part-content part3">
                             <div class="item">
                                 <img src="@/assets/images/experiment/tip2.png" class="img">
-                                <span class="text f-16 f-w500">“十二五”、“十三五”、“十四五”四川电网规划</span>
+                                <span class="text f-16 f-w500">“十二五”、“十三五”、“十四五”四川电网规划研究</span>
                             </div>
                             <div class="item">
                                 <img src="@/assets/images/experiment/tip2.png" class="img">
@@ -89,11 +89,11 @@
                             </div>
                             <div class="item">
                                 <img src="@/assets/images/experiment/tip2.png" class="img">
-                                <span class="text f-16 f-w500">四川特高压网架规划</span>
+                                <span class="text f-16 f-w500">四川特高压网架规划研究</span>
                             </div>
                             <div class="item">
                                 <img src="@/assets/images/experiment/tip2.png" class="img">
-                                <span class="text f-16 f-w500">外电入川、陇电入川规划</span>
+                                <span class="text f-16 f-w500">外电入川、陇电入川规划研究</span>
                             </div>
                         </div>
                     </div>

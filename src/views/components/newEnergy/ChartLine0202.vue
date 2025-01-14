@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-23 15:34:24
- * @LastEditTime: 2024-11-22 11:03:41
+ * @LastEditTime: 2025-01-13 14:28:44
 -->
 <template>
     <div ref="lineRef" class="line-box" />
@@ -9,14 +9,15 @@
 <script lang="ts" setup>
 import * as echarts from "echarts"
 import { ref, onMounted, defineProps, watch, shallowRef } from "vue"
+import { OUTDATEDATA } from './config'
 const props = defineProps({
   chartData: {
     type: Array,
     default: () => [],
   },
   markData: {
-    type: Array,
-    default: () => [],
+    type: Number,
+    default: 0,
   },
 })
 const line = shallowRef()
@@ -52,7 +53,7 @@ const setOptions = () => {
       axisLabel: {
         color: "#fff",
       },
-      data: xDate.value,
+      data: OUTDATEDATA,
     },
     yAxis: {
       type: "value",
@@ -72,10 +73,9 @@ const setOptions = () => {
       right: "5%",
       bottom: "10%",
     },
-    dataZoom: {
-      type: "inside",
-      realtime: true,
-    },
+    dataZoom: [
+      
+    ],
     series: [
       {
         name: "新能源8760实际出力",
@@ -98,21 +98,15 @@ const setOptions = () => {
           ]),
         },
         markLine: {
+          symbol: ['none', 'none'],
           data: [
             {
-              yAxis: props.markData[0],
+              yAxis: props.markData,
               name: "95%有效容量系数：0.66",
               label: {
                 formatter: "95%有效容量系数：{c}%",
               },
-            },
-            {
-              yAxis: props.markData[1],
-              name: "95%有效出力率：4%",
-              label: {
-                formatter: "95%有效出力率：{c}%",
-              },
-            },
+            }
           ],
           label: {
             color: "#FFC24B",
@@ -166,7 +160,7 @@ const renderDate = () => {
 watch(
   () => props.chartData,
   () => {
-    renderDate()
+    // renderDate()
     initChart()
   }
 )

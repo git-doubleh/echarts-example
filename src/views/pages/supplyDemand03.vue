@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-25 09:29:34
- * @LastEditTime: 2024-11-29 10:31:31
+ * @LastEditTime: 2025-01-08 14:09:15
 -->
 <template>
     <PageLayout title="网储规划研究">
@@ -28,7 +28,7 @@
             </div>
             <div class="right">
                 <img src="@/assets/images/supplyDemand/map5.png" alt="">
-                <PartSubTitle title="2030年新能源消纳情况" is-fill />
+                <PartSubTitle title="2030年新能源消纳情况" sub-title="万千瓦时" is-fill />
                 <div class="box">
                     <div
                         v-for="(item, index) in rowData"

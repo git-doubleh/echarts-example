@@ -45,7 +45,7 @@
             <div class="content">
                 <div class="top">
                     <span class="orange">规划</span>
-                    <span> - 电网发展规划</span>
+                    <span> - 电网发展规划研究</span>
                 </div>
                 <div class="bottom">
                     <span>1/主网规划成果 2/配网规划成果</span>

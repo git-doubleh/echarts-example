@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-21 14:07:42
- * @LastEditTime: 2024-12-05 09:15:21
+ * @LastEditTime: 2025-01-13 14:32:47
 -->
 <template>
     <PageLayout title="四川新能源出力特性分析">
@@ -11,7 +11,9 @@
                 <div class="desc-content f-22 f-w500">
                     电量方面，对风电、光伏年/月利用小时、有效容量系数等开展特性分析。根据2023年全省实际发电数据分析，我省<span
                         class="orange f-w500"
-                    >全年风电年利用小时明显高于光伏</span>，全省新能源发电受季节和气候条件影响较大，风电、光伏发电量呈现<span class="orange f-w500">丰小枯大</span>的特点，且风电发电量丰枯差异大于光伏发电。研究结果有助于指导全省新能源优化布局。
+                    >全年风电年利用小时明显高于光伏</span>，全省新能源发电受季节和气候条件影响较大，风电、光伏发电量呈现<span
+                        class="orange f-w500"
+                    >丰小枯大</span>的特点，且风电发电量丰枯差异大于光伏发电。研究结果有助于指导全省新能源优化布局。
                 </div>
             </div>
             <div class="main">
@@ -45,17 +47,23 @@
                     <div class="part part-pd part-one">
                         <div class="item">
                             <PartSubTitle title="风电8760出力曲线" is-fill />
-                            <img
+                            <div class="chart-box3">
+                                <ChartLine0202 :chart-data="windData" :mark-data="0.66" />
+                            </div>
+                            <!-- <img
                                 src="@/assets/images/newEnergy/wind-multiline.png"
                                 class="chart-box3"
-                            >
+                            > -->
                         </div>
                         <div class="item">
                             <PartSubTitle title="光伏8760出力曲线" is-fill />
-                            <img
+                            <!-- <img
                                 src="@/assets/images/newEnergy/light-multiline.png"
                                 class="chart-box3"
-                            >
+                            > -->
+                            <div class="chart-box3">
+                                <ChartLine0202 :chart-data="lightData" :mark-data="0.99" />
+                            </div>
                         </div>
                     </div>
                     <div class="part part-pd">
@@ -81,15 +89,17 @@ import { CountTo } from "vue3-count-to"
 import ChartLine0201 from "../components/newEnergy/ChartLine0201.vue"
 import ChartBar0201 from "../components/newEnergy/ChartBar0201.vue"
 import ChartLine0202 from "../components/newEnergy/ChartLine0202.vue"
+import { OUTWINDDATA, OUTLIGHTDATA } from '../components/newEnergy/config'
 defineProps({
   animatedCss: {
     type: String,
-    default: ''
-  }
+    default: "",
+  },
 })
 const chartLineData = ref([])
 const chartBarData = ref([])
-
+const windData = ref([])
+const lightData = ref([])
 onMounted(() => {
   setTimeout(() => {
     // 月利用小时数据
@@ -104,6 +114,9 @@ onMounted(() => {
       ],
     ]
 
+    // 风电出力数据
+    windData.value = OUTWINDDATA
+    lightData.value = OUTLIGHTDATA
     // 真实数据
     chartBarData.value = [
       {

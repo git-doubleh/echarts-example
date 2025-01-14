@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-22 09:46:20
- * @LastEditTime: 2024-11-21 15:27:18
+ * @LastEditTime: 2025-01-09 17:46:11
 -->
 <template>
     <div class="rate-box">
@@ -11,9 +11,9 @@
         <div class="chart-item">
             <ChartGauge0301 :chart-data="chartData[0]" :color="color" />
         </div>
-        <div class="chart-item">
+        <!-- <div class="chart-item">
             <ChartGauge0301 :chart-data="chartData[1]" :color="color" />
-        </div>
+        </div> -->
     </div>
 </template>
 <script setup lang="ts">
@@ -48,7 +48,7 @@ defineProps({
         background-size: contain;
     }
     .chart-item {
-        width: 140rem;
+        width: 70%;
         height: 100%;
     }
 }

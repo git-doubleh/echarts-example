@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-23 13:48:59
- * @LastEditTime: 2024-11-29 10:31:00
+ * @LastEditTime: 2025-01-08 11:11:57
 -->
 <template>
     <PageLayout title="电力电量供需平衡分析">
@@ -15,7 +15,7 @@
                     <div class="bg" />
                     <PartSubTitle title="共同研发供需分析工具" is-fill />
                     <div class="content f-18 f-w500">
-                        四川经研院已掌握HUST-ProS、PSD-PEBL等主流供需分析生产模拟软件，并联合中国电科院共同研发定制化PSD-PEBL生产模拟软件，对水电、储能等关键模块进行更符合四川电网实际的定制研发，供需分析结果更贴合四川实际特性。
+                        实验室已掌握HUST-ProS、PSD-PEBL等主流供需分析生产模拟软件，并联合中国电科院共同研发定制化PSD-PEBL生产模拟软件，对水电、储能等关键模块进行更符合四川电网实际的定制研发，供需分析结果更贴合四川实际特性。
                     </div>
                     <div class="tool-list">
                         <div

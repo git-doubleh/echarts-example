@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-23 15:34:24
- * @LastEditTime: 2024-11-21 15:25:18
+ * @LastEditTime: 2025-01-09 17:45:31
 -->
 <template>
     <div ref="lineRef" class="line-box" />
@@ -34,7 +34,7 @@ const setOptions = () => {
         type: "gauge",
         startAngle: 90,
         endAngle: -270,
-        radius: "76%",
+        radius: "68%",
         progress: {
           show: true,
           width: 14,
@@ -62,14 +62,14 @@ const setOptions = () => {
         },
         title: {
           show: true,
-          fontSize: 18,
+          fontSize: 16,
           offsetCenter: [0, "130%"],
           color: "#fff",
         },
         detail: {
           color: props.color,
           valueAnimation: true,
-          fontSize: 22,
+          fontSize: 20,
           offsetCenter: [0, 0],
           formatter: (name) => {
             return `${name}%`
@@ -93,5 +93,7 @@ onMounted(() => {
 .line-box {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 </style>

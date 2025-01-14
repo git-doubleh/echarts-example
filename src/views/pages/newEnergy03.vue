@@ -1,13 +1,13 @@
 <!--
  * @Description: 
  * @Date: 2024-10-21 14:07:42
- * @LastEditTime: 2024-12-05 16:20:12
+ * @LastEditTime: 2025-01-09 17:42:40
 -->
 <template>
     <PageLayout title="四川新能源出力特性分析">
         <div :class="[animatedCss, 'page-content']">
             <div class="desc">
-                <DescTitle title="新能源电量特性分析" />
+                <DescTitle title="新能源电力特性分析" />
                 <div class="desc-content f-22 f-w500">
                     电力方面，风电、光伏全年90%保证出力分别为5.26%，0.01%，远低于常规电源；风电、光伏出力丰枯差异较大，丰期风电、光伏平均出力系数分别为0.1973和0.1626，枯期分别为0.3756和0.1973；丰期负荷午高峰时段，风电、光伏平均出力系数为0.1578和0.4816；枯期负荷晚高峰时段，风电、光伏平均出力系数为0.4431和0.0055。
                 </div>
@@ -23,10 +23,10 @@
                                 value: '5.26',
                                 name: '90%保证出力率',
                             },
-                            {
-                                value: '3.38',
-                                name: '95%保证出力率',
-                            },
+                            // {
+                            //     value: '3.38',
+                            //     name: '95%保证出力率',
+                            // },
                         ]"
                     />
                     <OutPutRate
@@ -34,13 +34,13 @@
                         color="#4EE78E"
                         :chart-data="[
                             {
-                                value: '0.00',
+                                value: '0.01',
                                 name: '90%保证出力率',
                             },
-                            {
-                                value: '0.00',
-                                name: '95%保证出力率',
-                            },
+                            // {
+                            //     value: '0.00',
+                            //     name: '95%保证出力率',
+                            // },
                         ]"
                     />
                     <PartSubTitle title="四川省新能源出力统计特性" is-fill />
