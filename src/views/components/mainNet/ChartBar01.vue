@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-20 13:25:58
- * @LastEditTime: 2025-01-14 16:42:52
+ * @LastEditTime: 2025-01-15 10:20:45
 -->
 <template>
     <div ref="barRef" class="bar" />
@@ -69,15 +69,6 @@ const autoHighlight = () => {
 
 const setOptions = () => {
   option = {
-    title: {
-      text: "兆瓦",
-      textStyle: {
-        color: "rgba(255,255,255,0.85)",
-        fontSize: 16,
-        fontFamily: "PINGFANG",
-      },
-      right: 0,
-    },
     tooltip: {
       show: true,
       trigger: "axis",

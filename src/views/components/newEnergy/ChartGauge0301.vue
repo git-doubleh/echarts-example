@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-23 15:34:24
- * @LastEditTime: 2025-01-09 17:45:31
+ * @LastEditTime: 2025-01-15 10:08:40
 -->
 <template>
     <div ref="lineRef" class="line-box" />
@@ -34,17 +34,17 @@ const setOptions = () => {
         type: "gauge",
         startAngle: 90,
         endAngle: -270,
-        radius: "68%",
+        radius: "60%",
         progress: {
           show: true,
-          width: 14,
+          width: 20,
           itemStyle: {
             color: props.color,
           },
         },
         axisLine: {
           lineStyle: {
-            width: 14,
+            width: 20,
             color: [[1, "#072B57"]],
           },
         },

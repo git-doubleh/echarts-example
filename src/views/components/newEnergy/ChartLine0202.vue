@@ -104,7 +104,7 @@ const setOptions = () => {
               yAxis: props.markData,
               name: "95%有效容量系数：0.66",
               label: {
-                formatter: "95%有效容量系数：{c}%",
+                formatter: "95%有效容量系数：{c}",
               },
             }
           ],

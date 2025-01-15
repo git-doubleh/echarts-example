@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-22 09:46:20
- * @LastEditTime: 2025-01-09 17:46:11
+ * @LastEditTime: 2025-01-15 10:00:06
 -->
 <template>
     <div class="rate-box">
@@ -35,9 +35,9 @@ defineProps({
 </script>
 <style lang="scss" scoped>
 .rate-box {
-    @include flex();
-    height: 150rem;
-    margin: -20rem 0 20rem;
+    @include flex(column, flex-start, center);
+    width: 50%;
+    height: 260rem;
     .label {
         width: 132rem;
         height: 40rem;
@@ -48,8 +48,8 @@ defineProps({
         background-size: contain;
     }
     .chart-item {
-        width: 70%;
-        height: 100%;
+        width: 90%;
+        height: 90%;
     }
 }
 </style>

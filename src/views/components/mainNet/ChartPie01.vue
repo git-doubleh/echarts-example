@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-23 15:34:24
- * @LastEditTime: 2024-12-24 13:16:52
+ * @LastEditTime: 2025-01-15 10:20:24
 -->
 <template>
     <div ref="pieRef" class="pie-box" />
@@ -68,23 +68,14 @@ const pieRef = shallowRef()
 
 const setOptions = () => {
   const option = {
-    title: {
-      text: "兆瓦",
-      textStyle: {
-        color: "rgba(255,255,255,0.85)",
-        fontSize: 16,
-        fontFamily: "PINGFANG",
-      },
-      right: 0,
-    },
     legend: {
       orient: "vertical",
-      top: 30,
+      top: 40,
       right: 20,
       itemWidth: 7,
       itemHeight: 7,
       icon: "circle",
-      itemGap: 20,
+      itemGap: 30,
       textStyle: {
         rich: {
           a: {

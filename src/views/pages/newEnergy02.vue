@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-21 14:07:42
- * @LastEditTime: 2025-01-13 14:32:47
+ * @LastEditTime: 2025-01-15 10:01:42
 -->
 <template>
     <PageLayout title="四川新能源出力特性分析">
@@ -25,7 +25,7 @@
                                 风电年利用小时
                             </div>
                             <div class="num PANGMEN f-28 f-w500">
-                                <CountTo :start-val="0" :end-val="2578" :duration="3000" />
+                                <CountTo :start-val="0" :end-val="2635" :duration="3000" />
                             </div>
                         </div>
                         <div class="hour second">
@@ -33,7 +33,7 @@
                                 光伏年利用小时
                             </div>
                             <div class="num PANGMEN f-28 f-w500">
-                                <CountTo :start-val="0" :end-val="1999" :duration="3000" />
+                                <CountTo :start-val="0" :end-val="1624" :duration="3000" />
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                         <div class="item">
                             <PartSubTitle title="风电8760出力曲线" is-fill />
                             <div class="chart-box3">
-                                <ChartLine0202 :chart-data="windData" :mark-data="0.66" />
+                                <ChartLine0202 :chart-data="windData" :mark-data="0.52" />
                             </div>
                             <!-- <img
                                 src="@/assets/images/newEnergy/wind-multiline.png"
@@ -62,7 +62,7 @@
                                 class="chart-box3"
                             > -->
                             <div class="chart-box3">
-                                <ChartLine0202 :chart-data="lightData" :mark-data="0.99" />
+                                <ChartLine0202 :chart-data="lightData" :mark-data="0.59" />
                             </div>
                         </div>
                     </div>

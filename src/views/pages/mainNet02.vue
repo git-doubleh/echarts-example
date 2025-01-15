@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-29 09:17:30
- * @LastEditTime: 2024-12-20 11:22:24
+ * @LastEditTime: 2025-01-15 10:49:58
 -->
 <template>
     <PageLayout title="主网发展规划技术应用">
@@ -24,16 +24,16 @@
                         </AOption>
                     </ASelect>
                 </div>
-                <PartSubTitle title="发电信息" is-fill />
+                <PartSubTitle title="发电信息" sub-title="兆瓦" is-fill />
                 <div class="pie-box">
                     <ChartPie01 :time-select="timeSelect" />
                 </div>
-                <PartSubTitle title="断面信息" is-fill />
+                <PartSubTitle title="断面信息" sub-title="兆瓦" is-fill />
                 <div class="bar-box">
                     <ChartBar01 :time-select="timeSelect" />
                 </div>
             </div>
-            <div class="right" />
+            <img :src="mapList[timeSelect]" class="right">
         </div>
     </PageLayout>
 </template>
@@ -44,6 +44,12 @@ import NavTitle from "../components/mainNet/NavTitle.vue"
 import PartSubTitle from "../components/partSubTitle.vue"
 import ChartPie01 from "../components/mainNet/ChartPie01.vue"
 import ChartBar01 from "../components/mainNet/ChartBar01.vue"
+
+import map0 from '@/assets/images/mainNet/map0.png'
+import map1 from '@/assets/images/mainNet/map1.png'
+import map2 from '@/assets/images/mainNet/map2.png'
+import map3 from '@/assets/images/mainNet/map3.png'
+
 defineProps({
   animatedCss: {
     type: String,
@@ -51,6 +57,7 @@ defineProps({
   }
 })
 const timeSelect = ref<number>(0)
+const mapList = ref([map0, map1, map2, map3])
 
 </script>
 
@@ -84,7 +91,9 @@ const timeSelect = ref<number>(0)
     }
     .pie-box {
       width: 100%;
-      height: 313rem;
+      height: 293rem;
+      margin-bottom: 20rem;
+      background-color: #0A254C;
     }
     .bar-box {
       width: 100%;
@@ -95,8 +104,6 @@ const timeSelect = ref<number>(0)
     width: 1029rem;
     height: 752rem;
     margin-top: 23rem;
-    background: url("@/assets/images/mainNet/map1.png") no-repeat;
-    background-size: contain;
   }
 }
 </style>

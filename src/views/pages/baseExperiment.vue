@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-15 15:16:53
- * @LastEditTime: 2025-01-15 09:30:20
+ * @LastEditTime: 2025-01-15 09:50:43
 -->
 <template>
     <PageLayout title="实验室基本情况">
@@ -141,15 +141,15 @@ onMounted(() => {
   setTimeout(() => {
     pieData.value = [
       {
-        value: "7",
+        value: "8",
         name: "初级职称",
       },
       {
-        value: "11",
+        value: "12",
         name: "中级职称",
       },
       {
-        value: "17",
+        value: "15",
         name: "高级职称",
       },
     ]

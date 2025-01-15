@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-22 10:32:21
- * @LastEditTime: 2025-01-10 11:22:07
+ * @LastEditTime: 2025-01-15 10:12:56
 -->
 <template>
     <div class="out-table">
@@ -196,7 +196,7 @@ onMounted(() => {
     border: none;
   }
   :deep(.arco-table .arco-table-cell) {
-    padding: 5px 10px;
+    padding: 7px 10px;
   }
   :deep(.arco-table-td-content) {
     text-align: center;

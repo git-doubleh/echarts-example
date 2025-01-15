@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-21 14:07:42
- * @LastEditTime: 2025-01-09 17:42:40
+ * @LastEditTime: 2025-01-15 10:12:02
 -->
 <template>
     <PageLayout title="四川新能源出力特性分析">
@@ -15,34 +15,28 @@
             <div class="main">
                 <div class="left part-pd">
                     <PartSubTitle title="保证出力率" is-fill />
-                    <OutPutRate
-                        label="风电"
-                        color="#29CDFF"
-                        :chart-data="[
-                            {
-                                value: '5.26',
-                                name: '90%保证出力率',
-                            },
-                            // {
-                            //     value: '3.38',
-                            //     name: '95%保证出力率',
-                            // },
-                        ]"
-                    />
-                    <OutPutRate
-                        label="光伏"
-                        color="#4EE78E"
-                        :chart-data="[
-                            {
-                                value: '0.01',
-                                name: '90%保证出力率',
-                            },
-                            // {
-                            //     value: '0.00',
-                            //     name: '95%保证出力率',
-                            // },
-                        ]"
-                    />
+                    <div class="rate-container">
+                        <OutPutRate
+                            label="风电"
+                            color="#29CDFF"
+                            :chart-data="[
+                                {
+                                    value: '5.26',
+                                    name: '90%保证出力率',
+                                },
+                            ]"
+                        />
+                        <OutPutRate
+                            label="光伏"
+                            color="#4EE78E"
+                            :chart-data="[
+                                {
+                                    value: '0.01',
+                                    name: '90%保证出力率',
+                                },
+                            ]"
+                        />
+                    </div>
                     <PartSubTitle title="四川省新能源出力统计特性" is-fill />
                     <OutPutTable />
                 </div>
@@ -426,6 +420,19 @@ const periodLackBarDataRender = computed(() => {
       );
       width: 628rem;
       height: 682rem;
+      .rate-container {
+        @include flex(row, center);
+        position: relative;
+        &::after{
+          display: block;
+          content: '';
+          position: absolute;
+          left: 50%;
+          width: 0;
+          height: 194rem;
+          border-left: 1px dashed #36A6DA;
+        }
+      }
     }
     .right {
       @include borderImg(
