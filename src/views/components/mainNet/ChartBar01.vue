@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-20 13:25:58
- * @LastEditTime: 2024-12-20 13:25:38
+ * @LastEditTime: 2025-01-14 16:42:52
 -->
 <template>
     <div ref="barRef" class="bar" />
@@ -23,22 +23,22 @@ const pie = shallowRef()
 const getMax = () => {
   let startIndex = option.dataZoom ? option.dataZoom[0]?.startValue : 0
   let endIndex = option.dataZoom ? option.dataZoom[0]?.endValue : tag.value
-  return parseInt(Math.max(...SECTIONBARDATA[props.timeSelect].slice(startIndex, endIndex + 1)))
+  return parseInt(
+    Math.max(
+      ...SECTIONBARDATA[props.timeSelect].slice(startIndex, endIndex + 1)
+    )
+  )
 }
 
 const datayAxis = shallowRef([
-  "攀枝花",
-  "攀西南环",
-  "攀西2",
-  "溪向留川",
+  "攀西",
+  "雅安",
   "茂县",
   "川渝",
   "康定",
-  "攀西北环",
-  "木里水洛",
-  "川送藏",
+  "木里",
   "川藏",
-  "金上留电",
+  "川西",
 ])
 
 const tag = ref(5)
@@ -124,7 +124,7 @@ const setOptions = () => {
           color: "transparent", // 虚线颜色
         },
       },
-      max: getMax()
+      max: getMax(),
     },
     yAxis: {
       type: "category",

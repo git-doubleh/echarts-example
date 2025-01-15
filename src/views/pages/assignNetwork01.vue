@@ -1,10 +1,10 @@
 <!--
  * @Description: 
  * @Date: 2024-10-22 16:01:52
- * @LastEditTime: 2024-11-29 10:15:33
+ * @LastEditTime: 2025-01-14 17:37:23
 -->
 <template>
-    <PageLayout title="降温/采暖负荷预测分析">
+    <PageLayout title="降温负荷预测分析">
         <div :class="[animatedCss, 'page-content']">
             <div class="left">
                 <div class="top f-22 f-w500">
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="right">
-                <span class="title f-24 YOUSHE">预测2024年四川迎峰度夏期间电力需求</span>
+                <span class="title f-24 YOUSHE">预测四川迎峰度夏期间电力需求</span>
                 <span class="sub-title f-20 YOUSHE">今夏负荷预测结果</span>
                 <span class="left-num num f-24 PANGMEN">
                     <CountTo
@@ -46,8 +46,8 @@
                         :decimals="1"
                     />
                 </span>
-                <span class="desc f-w500 f-16 desc1">当成都平原最高温度达到40℃持续4天，全省各地市温度呈阶梯型分布，不同区域的降温负荷如上图所示</span>
-                <span class="desc f-w500 f-16 desc2">当成都平原最高温度达到42℃持续4天，全省各地市温度呈阶梯型分布，不同区域的降温负荷如上图所示</span>
+                <span class="desc f-w500 f-16 desc1">当成都平原最高温度达到40℃持续4天，不同区域的降温负荷如上图所示</span>
+                <span class="desc f-w500 f-16 desc2">当成都平原最高温度达到42℃持续4天，不同区域的降温负荷如上图所示</span>
             </div>
         </div>
     </PageLayout>

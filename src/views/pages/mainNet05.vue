@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-29 14:34:59
- * @LastEditTime: 2025-01-08 14:10:15
+ * @LastEditTime: 2025-01-14 16:30:14
 -->
 <template>
     <PageLayout title="主网发展规划技术应用">
@@ -18,15 +18,17 @@
                 <div class="left" />
                 <div class="right">
                     <PartSubTitle title="短路电流计算结果" sub-title="千安" is-fill />
-                    <div class="hr">
-                        <span class="h-item item f-18 f-w500">变电站</span>
-                        <span class="h-item item f-18 f-w500">网架优化前</span>
-                        <span class="h-item item f-18 f-w500">立体双环</span>
-                    </div>
-                    <div v-for="(item, index) in tableData" :key="index" class="ht">
-                        <span class="t-item item">{{ item.title }}</span>
-                        <span class="t-item item">{{ item.before }}</span>
-                        <span class="t-item item">{{ item.double }}</span>
+                    <div class="scroll-box">
+                        <div class="hr">
+                            <span class="h-item item f-18 f-w500">变电站</span>
+                            <span class="h-item item f-18 f-w500">网架优化前</span>
+                            <span class="h-item item f-18 f-w500">立体双环</span>
+                        </div>
+                        <div v-for="(item, index) in tableData" :key="index" class="ht">
+                            <span class="t-item item">{{ item.title }}</span>
+                            <span class="t-item item">{{ item.before }}</span>
+                            <span class="t-item item">{{ item.double }}</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -47,23 +49,38 @@ defineProps({
 const tableData = ref([
   {
     title: "泸州",
-    before: 49.1,
+    before: 59.1,
     double: 47.6,
   },
   {
-    title: "自贡西",
-    before: 42.5,
+    title: "自贡II",
+    before: 49.5,
     double: 45.3,
   },
   {
     title: "天府1#母线",
-    before: 43.4,
+    before: 53.4,
     double: 50.2,
   },
   {
     title: "天府2#母线",
-    before: 50.3,
-    double: 50.2,
+    before: 55.3,
+    double: 51.4,
+  },
+  {
+    title: "南天",
+    before: 60.8,
+    double: 52.4,
+  },
+  {
+    title: "嘉州",
+    before: 61.9,
+    double: 48.3,
+  },
+  {
+    title: "辉山",
+    before: 61.9,
+    double: 43.5,
   },
 ])
 </script>
@@ -100,6 +117,10 @@ const tableData = ref([
     box-sizing: border-box;
     background: url("@/assets/images/mainNet/bg-part10.png") no-repeat;
     background-size: contain;
+    .scroll-box{
+      height: 240rem;
+      overflow-y: auto
+    }
     .hr {
       @include flex();
       margin-top: 15rem;

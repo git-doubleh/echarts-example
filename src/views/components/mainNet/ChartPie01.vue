@@ -48,13 +48,6 @@ const chartData = computed(() => {
     },
     {
       value: POWERPIEDATA[props.timeSelect][4],
-      name: "变电站",
-      itemStyle: {
-        color: "#FFDA00",
-      },
-    },
-    {
-      value: POWERPIEDATA[props.timeSelect][4],
       name: "风电场",
       itemStyle: {
         color: "#B765FF",
@@ -65,20 +58,6 @@ const chartData = computed(() => {
       name: "光伏电站",
       itemStyle: {
         color: "#5F71FF",
-      },
-    },
-    {
-      value: POWERPIEDATA[props.timeSelect][4],
-      name: "电化学储能",
-      itemStyle: {
-        color: "#9BFF6A",
-      },
-    },
-    {
-      value: POWERPIEDATA[props.timeSelect][4],
-      name: "储能",
-      itemStyle: {
-        color: "#FF6ADF",
       },
     },
   ]

@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-22 16:01:52
- * @LastEditTime: 2024-11-29 10:16:03
+ * @LastEditTime: 2025-01-14 17:27:28
 -->
 <template>
     <PageLayout title="电动汽车发展分析">
@@ -20,9 +20,9 @@
                 <div class="right part">
                     <span class="part-title YOUSHE f-24">电动汽车保有量变化趋势</span>
                     <div class="text f-18 f-w500">
-                        四川发展趋势.到2025年四川省电动替代水平大幅提升，新能源汽车市场渗透率达到全国平均水平，预计
-                        2025 年全省电动汽车保有量将突破100万辆，预计 2025
-                        年成都市电动汽车保有量达66万辆。
+                        到2030年四川省电动替代水平大幅提升，新能源汽车市场渗透率达到全国平均水平，预计
+                        2030 年全省电动汽车保有量将突破450万辆，预计 2030
+                        年成都市电动汽车保有量达190万辆。
                     </div>
                     <span class="tag right-tag">四川省</span>
                     <div class="chart-bar">
@@ -54,7 +54,7 @@
                 </div>
             </div>
             <div class="bottom part">
-                <span class="part-title YOUSHE f-24">2025年丰大四川电网负荷变化情况</span>
+                <span class="part-title YOUSHE f-24">丰大四川电网负荷变化情况</span>
                 <div class="main">
                     <div class="text-box f-16 f-w500">
                         <div class="text">

@@ -1,13 +1,13 @@
 <!--
  * @Description: 
  * @Date: 2024-10-28 09:16:55
- * @LastEditTime: 2024-12-24 16:20:39
+ * @LastEditTime: 2025-01-14 17:24:47
 -->
 <template>
     <PageLayout title="主网发展规划技术">
         <div :class="[animatedCss, 'content']">
             <div class="desc f-w500 f-26">
-                依托<span class="orange">先进仿真技术手段</span>，开展规划方案协同研究，包括<span class="orange">运行方式安排与调试、短路电流与短路比计算、安全稳定分析</span>等国际主流仿真方法，为四川电网主网架规划提供重要技术支撑。
+                依托<span class="orange">先进仿真规划技术</span>，开展规划方案研究，从<span class="orange">运行方式安排与调试、短路电流与短路比计算、系统安全稳定方面</span>多角度校核电网规划方案，为四川电网主网架规划提供重要技术支撑。
             </div>
             <div class="box">
                 <div class="item item1">

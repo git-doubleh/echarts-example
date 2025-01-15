@@ -1,14 +1,14 @@
 <!--
  * @Description: 
  * @Date: 2024-10-23 13:48:59
- * @LastEditTime: 2025-01-08 11:11:57
+ * @LastEditTime: 2025-01-14 17:21:01
 -->
 <template>
     <PageLayout title="电力电量供需平衡分析">
         <NavTitle title="研究方法" />
         <div :class="[animatedCss, 'page-content']">
             <div class="desc f-22 f-w500">
-                随着四川新型电力系统建设，各种<span class="orange">新要素、新业态</span>持续涌现，<span class="orange">电力供给结构、供需平衡模式</span>等将发生深刻变化，传统拉表法难以准确刻画电力供需形势，亟需提升电力电量平衡分析研究深度和广度，采取适用于四川电网源荷特点的8760小时级生产模拟方法开展电力供需平衡分析研究，服务电力保供和能源转型。
+                随着四川新型电力系统建设，各种<span class="orange">新要素、新业态</span>持续涌现，<span class="orange">电力供给结构、供需平衡模式</span>等将发生深刻变化，传统“拉表法”难以准确刻画电力供需形势，亟需提升电力电量平衡分析研究深度和广度，采取适用于四川电网源荷特点的8760小时级生产模拟方法开展电力供需平衡分析研究，服务电力保供和能源转型。
             </div>
             <div class="main">
                 <div class="part">
