@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-18 13:41:59
- * @LastEditTime: 2025-01-10 14:08:29
+ * @LastEditTime: 2025-01-15 14:55:14
 -->
 <template>
     <PageLayout title="四川新能源出力特性分析">
@@ -38,6 +38,7 @@
                             @tab-cb="handleTabClick"
                         />
                     </div>
+                    <img src="@/assets/images/newEnergy/bg-map.png" class="bg">
                     <img :src="imgsTab[tabSelectedIdx]" class="img">
                     <div class="text-content">
                         <span class="f-16 f-w500">已开发量
@@ -187,9 +188,17 @@ onMounted(() => {
         position: absolute;
         top: 16rem;
         right: 0;
-        z-index: 3;
+        z-index: 4;
+      }
+      .bg {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
       }
       .img {
+        position: absolute;
+        z-index: 3;
         width: 100%;
         height: 100%;
       }
@@ -200,6 +209,7 @@ onMounted(() => {
         left: 0;
         color: #fff;
         line-height: 28rem;
+        z-index: 4;
         &:first-child {
           margin-bottom: 6rem;
         }

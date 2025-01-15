@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-09-19 15:21:23
- * @LastEditTime: 2025-01-13 10:59:45
+ * @LastEditTime: 2025-01-15 15:00:58
 -->
 <template>
     <div class="map-box">
@@ -61,7 +61,7 @@ const coords = [
   [102.512747, 28.646842],
   [102.253161, 26.660167],
   [102.182018, 27.407479],
-  [102.586184, 26.639791],
+  [102.586184, 26.699791],
   [103.58015, 28.269969],
   [102.759818, 27.065198],
   [102.780326, 28.964823],
@@ -73,7 +73,7 @@ const coords = [
   [101.516006, 27.426104],
   [101.276051, 27.93511],
   [102.185872, 28.555802],
-  [101.722669, 26.588551],
+  [101.892669, 26.698551],
 ]
 
 const mapRef = ref()
@@ -135,7 +135,7 @@ const setOptions = () => {
       {
         type: "heatmap",
         coordinateSystem: "geo",
-        pointSize: 30,
+        pointSize: 25,
         blurSize: 10,
         // z: 3,
         data: getData(),
@@ -163,7 +163,7 @@ onMounted(() => {
 <style lang="scss" scoped>
 .map-box {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   height: 100%;
   .name {

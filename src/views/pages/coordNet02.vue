@@ -1,10 +1,10 @@
 <!--
  * @Description: 
  * @Date: 2024-10-29 14:34:59
- * @LastEditTime: 2024-11-29 10:17:09
+ * @LastEditTime: 2025-01-15 14:33:46
 -->
 <template>
-    <PageLayout title="主网发展规划技术应用">
+    <PageLayout title="四川配电网差异化特征">
         <NavTitle title="【成都平原】配网规划研究" />
         <div :class="[animatedCss, 'content']">
             <div class="left" />
@@ -12,7 +12,7 @@
             <div class="right part-border">
                 <div class="row row1">
                     <div class="title YOUSHE">
-                        存在问题
+                        区域特点
                     </div>
                     <div class="text f-18 f-w500">
                         负荷水平高且增速快，结构虽坚强但冗余度不够，供电卡口多，产业发展对供电品质要求较高。
@@ -20,7 +20,7 @@
                 </div>
                 <div class="row row2">
                     <div class="title YOUSHE">
-                        解决方案/规划
+                        示范工程
                     </div>
                     <div class="text f-18 f-w500">
                         天府新区天府(红星)柔直示范项目(拟建)：在天府站建设两套±10kV/

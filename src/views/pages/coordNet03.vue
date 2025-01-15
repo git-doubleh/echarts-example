@@ -10,7 +10,7 @@
             <div class="left part-border">
                 <div class="row row1">
                     <div class="title YOUSHE">
-                        存在问题
+                        区域特点
                     </div>
                     <div class="text f-18 f-w500">
                         配电网网架结构薄弱，供电距离较长，供电可靠性较低，负荷发展水平较低，投资效益差。
@@ -18,7 +18,7 @@
                 </div>
                 <div class="row row2">
                     <div class="title YOUSHE">
-                        解决方案/规划
+                        示范工程
                     </div>
                     <div class="text f-18 f-w500">
                         甘孜北部“构网型储能+新能源”示范项目（拟建）：针对甘孜北部大电网延伸困难的高原地区面临的供电能力不足、供电可靠性偏低的等问题，运用构网型储能技术，提升高原电网电力普遍服务水平。

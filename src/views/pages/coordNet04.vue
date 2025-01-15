@@ -11,7 +11,7 @@
             <div class="right part-border">
                 <div class="row row1">
                     <div class="title YOUSHE">
-                        存在问题
+                        区域特点
                     </div>
                     <div class="text f-18 f-w500">
                         多晶硅、锂电等产业发展较快，工业园区负荷需求旺盛，配电网容载比较低，农网地区低电压现象严重。
@@ -19,7 +19,7 @@
                 </div>
                 <div class="row row2">
                     <div class="title YOUSHE">
-                        解决方案/规划
+                        示范工程
                     </div>
                     <div class="text f-18 f-w500">
                         全域全景全链条的低电压分析治理方案：运用神经网络、决策树等AI技术，打破低电压问题分析的传统“盲区”，全景观察低电压问题现状、全局诊断低电压产生成因、全程指导低电压治理方案、全面评价低电压治理成效。

@@ -11,7 +11,7 @@
             <div class="right part-border">
                 <div class="row row1">
                     <div class="title YOUSHE">
-                        存在问题
+                        区域特点
                     </div>
                     <div class="text f-18 f-w500">
                         分布式新能源资源丰富，但消纳能力有限。
@@ -19,7 +19,7 @@
                 </div>
                 <div class="row row2">
                     <div class="title YOUSHE">
-                        解决方案/规划
+                        示范工程
                     </div>
                     <div class="text f-18 f-w500">
                         新型能源体系示范区（在建）：统筹配电网容量、负荷增长及调节资源，常态化开展“网上电网”分布式光伏承载力评估工作，引导分布式光伏向可开放容量充足区域布局开发，加强电网建设，持续提升配网承载能力。

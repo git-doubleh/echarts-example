@@ -11,7 +11,7 @@
             <div class="right part-border">
                 <div class="row row1">
                     <div class="title YOUSHE">
-                        存在问题
+                        区域特点
                     </div>
                     <div class="text f-18 f-w500">
                         春节返乡引起的季节性重过载低电压，历史遗留原因导致局部配网薄弱。
@@ -19,7 +19,7 @@
                 </div>
                 <div class="row row2">
                     <div class="title YOUSHE">
-                        解决方案/规划
+                        示范工程
                     </div>
                     <div class="text f-18 f-w500">
                         新型储能解决配变与用户侧低电压问题示范工程项目：选取试点台区开展示范工程建设，在400V末端安装不同功率、容量的储能装置，使其工作在“受控电流源”模式，结合削峰填谷，提升高峰用电时期末端电压，提高配网运营的综合效益。

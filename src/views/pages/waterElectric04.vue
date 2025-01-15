@@ -233,7 +233,7 @@ onMounted(() => {
   }
   .sjk-img {
     position: absolute;
-    bottom: 608rem;
+    bottom: 510rem;
     right: 482rem;
     width: 134rem;
     height: 28rem;
