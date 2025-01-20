@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-29 14:34:59
- * @LastEditTime: 2024-11-29 10:17:31
+ * @LastEditTime: 2025-01-20 16:43:27
 -->
 <template>
     <PageLayout title="四川配电网前沿研究与示范工程">
@@ -27,12 +27,19 @@
                 <img src="@/assets/images/coordNet/part02.png" class="img">
             </div>
             <div class="right" />
+            <MapDot
+                :posi="{
+                    right: '626rem',
+                    bottom: '407rem'
+                }"
+            />
         </div>
     </PageLayout>
 </template>
 <script setup lang="ts">
 import PageLayout from "../components/pageLayout.vue"
 import NavTitle from "../components/mainNet/NavTitle.vue"
+import MapDot from "../components/CoordNet/MapDot.vue"
 defineProps({
   animatedCss: {
     type: String,

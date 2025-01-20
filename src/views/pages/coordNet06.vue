@@ -1,13 +1,19 @@
 <!--
  * @Description: 
  * @Date: 2024-10-29 14:34:59
- * @LastEditTime: 2024-11-29 10:18:23
+ * @LastEditTime: 2025-01-20 16:52:02
 -->
 <template>
     <PageLayout title="四川配电网前沿研究与示范工程">
         <NavTitle title="【攀西片区】配网规划研究" />
         <div :class="[animatedCss, 'content']">
             <div class="left" />
+            <MapDot
+                :posi="{
+                    left: '350rem',
+                    bottom: '123rem'
+                }"
+            />
             <div class="right part-border">
                 <div class="row row1">
                     <div class="title YOUSHE">
@@ -25,6 +31,7 @@
                         新型能源体系示范区（在建）：统筹配电网容量、负荷增长及调节资源，常态化开展“网上电网”分布式光伏承载力评估工作，引导分布式光伏向可开放容量充足区域布局开发，加强电网建设，持续提升配网承载能力。
                     </div>
                 </div>
+                <PartSubTitle title="2025年一季度设备与区域可开放容量的情况" is-fill />
                 <div class="img-box">
                     <img src="@/assets/images/coordNet/part06.png" class="img1">
                     <img src="@/assets/images/coordNet/part05.png" class="img2">
@@ -35,7 +42,9 @@
 </template>
 <script setup lang="ts">
 import PageLayout from "../components/pageLayout.vue"
+import PartSubTitle from "../components/partSubTitle.vue"
 import NavTitle from "../components/mainNet/NavTitle.vue"
+import MapDot from "../components/CoordNet/MapDot.vue"
 defineProps({
   animatedCss: {
     type: String,
@@ -98,14 +107,13 @@ defineProps({
     }
     .img-box {
       @include flex();
-      margin-top: 20rem;
       .img1 {
         width: 377rem;
-        height: 436rem;
+        height: 378rem;
       }
       .img2 {
         width: 362rem;
-        height: 436rem;
+        height: 378rem;
       }
     }
   }

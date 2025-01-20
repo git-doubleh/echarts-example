@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2024-10-31 09:33:03
- * @LastEditTime: 2024-11-29 10:56:11
+ * @LastEditTime: 2025-01-20 16:34:54
 -->
 <template>
     <PageLayout title="四川配电网差异化特征">
@@ -17,6 +17,18 @@
                 </div>
             </div>
             <img src="@/assets/images/coordNet/map01.png" class="map">
+            <MapDot
+                :posi="{
+                    left: '810rem',
+                    bottom: '458rem'
+                }"
+            />
+            <MapDot
+                :posi="{
+                    left: '911rem',
+                    bottom: '180rem'
+                }"
+            />
             <div class="bg-animate" />
 
             <div class="tool-part part1">
@@ -66,6 +78,7 @@
 </template>
 <script setup lang="ts">
 import PageLayout from "../components/pageLayout.vue"
+import MapDot from "../components/CoordNet/MapDot.vue"
 defineProps({
   animatedCss: {
     type: String,

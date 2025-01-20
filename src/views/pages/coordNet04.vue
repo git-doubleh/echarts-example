@@ -1,13 +1,19 @@
 <!--
  * @Description: 
  * @Date: 2024-10-29 14:34:59
- * @LastEditTime: 2024-11-29 10:17:55
+ * @LastEditTime: 2025-01-20 16:48:45
 -->
 <template>
     <PageLayout title="四川配电网前沿研究与示范工程">
         <NavTitle title="【川南片区】配网规划研究" />
         <div :class="[animatedCss, 'content']">
             <div class="left" />
+            <MapDot
+                :posi="{
+                    left: '655rem',
+                    bottom: '220rem'
+                }"
+            />
             <div class="right part-border">
                 <div class="row row1">
                     <div class="title YOUSHE">
@@ -33,6 +39,7 @@
 <script setup lang="ts">
 import PageLayout from "../components/pageLayout.vue"
 import NavTitle from "../components/mainNet/NavTitle.vue"
+import MapDot from "../components/CoordNet/MapDot.vue"
 defineProps({
   animatedCss: {
     type: String,
