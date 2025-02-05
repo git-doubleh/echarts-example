@@ -2,7 +2,7 @@
 <!--
  * @Description: 
  * @Date: 2024-11-07 09:45:44
- * @LastEditTime: 2024-12-13 14:32:12
+ * @LastEditTime: 2025-01-21 09:45:11
 -->
 <template>
     <menu :class="[isMenuShow ? 'menu-show' : 'menu-hidden']">
@@ -154,6 +154,7 @@ const methodActive = ref("click")
 
 const pageTo = (url) => {
   emits("pageTo", url)
+  isMenuShow.value = false
 }
 
 const toggleMethods = (methods: string) => {

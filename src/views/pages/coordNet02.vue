@@ -4,7 +4,7 @@
  * @LastEditTime: 2025-01-20 16:41:06
 -->
 <template>
-    <PageLayout title="四川配电网差异化特征">
+    <PageLayout title="四川配电网前沿研究与示范工程">
         <NavTitle title="【成都平原】配网规划研究" />
         <div :class="[animatedCss, 'content']">
             <div class="left" />
