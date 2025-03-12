@@ -1,7 +1,7 @@
 /*
  * @Description: 
  * @Date: 2022-06-23 11:50:56
- * @LastEditTime: 2024-10-15 09:30:14
+ * @LastEditTime: 2025-03-12 15:19:10
  */
 import {
     createRouter,
@@ -9,7 +9,7 @@ import {
     RouteRecordRaw
 } from 'vue-router'
 
-import Home from '@/views/home/index.vue'
+const Home = () => import('@/views/home/index.vue') 
 
 const routes: Array<RouteRecordRaw> = [
     {

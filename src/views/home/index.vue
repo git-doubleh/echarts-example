@@ -1,7 +1,7 @@
 <!--
  * @Description: 
  * @Date: 2022-06-23 11:49:22
- * @LastEditTime: 2024-12-20 11:05:49
+ * @LastEditTime: 2025-03-05 11:21:54
 -->
 <template>
     <div class="app-container">
@@ -29,7 +29,7 @@
     </div>
 </template>
 <script lang="ts" setup>
-import { ref, reactive, onMounted } from "vue"
+import { ref, defineAsyncComponent, onMounted } from "vue"
 import { Swiper, SwiperSlide } from "swiper/vue"
 // 引入swiper样式（按需导入）
 import "swiper/css"
@@ -38,44 +38,80 @@ import "swiper/css/pagination" // 轮播图底面的小圆点
 import { Mousewheel, Pagination, Autoplay, Virtual } from "swiper/modules"
 import { resize } from "@/utils/resize"
 import Menu from "../components/Menu.vue"
-import baseExperiment from "../pages/baseExperiment.vue"
-import pageCategory01 from "../pages/pageCategory01.vue"
-import waterElectric01 from "../pages/waterElectric01.vue"
-import waterElectric02 from "../pages/waterElectric02.vue"
-import waterElectric03 from "../pages/waterElectric03.vue"
-import waterElectric04 from "../pages/waterElectric04.vue"
-import newEnergy01 from "../pages/newEnergy01.vue"
-import newEnergy02 from "../pages/newEnergy02.vue"
-import newEnergy03 from "../pages/newEnergy03.vue"
+const  baseExperiment = defineAsyncComponent(() => import("../pages/baseExperiment.vue"))
+// import baseExperiment from "../pages/baseExperiment.vue"
+const pageCategory01 = defineAsyncComponent(() => import("../pages/pageCategory01.vue")) 
+// import pageCategory01 from "../pages/pageCategory01.vue"
+const waterElectric01 = defineAsyncComponent(() => import("../pages/waterElectric01.vue")) 
+// import waterElectric01 from "../pages/waterElectric01.vue"
+const waterElectric02 = defineAsyncComponent(() => import("../pages/waterElectric02.vue"))
+// import waterElectric02 from "../pages/waterElectric02.vue"
+const waterElectric03 = defineAsyncComponent(() => import("../pages/waterElectric03.vue")) 
+// import waterElectric03 from "../pages/waterElectric03.vue"
+const waterElectric04 = defineAsyncComponent(() => import("../pages/waterElectric04.vue")) 
+// import waterElectric04 from "../pages/waterElectric04.vue"
+const newEnergy01 = defineAsyncComponent(() => import("../pages/newEnergy01.vue"))
+// import newEnergy01 from "../pages/newEnergy01.vue"
+const newEnergy02 = defineAsyncComponent(() => import("../pages/newEnergy02.vue")) 
+// import newEnergy02 from "../pages/newEnergy02.vue"
+const newEnergy03 = defineAsyncComponent(() => import("../pages/newEnergy03.vue")) 
+// import newEnergy03 from "../pages/newEnergy03.vue"
 import pageCategory02 from "../pages/pageCategory02.vue"
-import assignNetwork01 from "../pages/assignNetwork01.vue"
-import assignNetwork02 from "../pages/assignNetwork02.vue"
-import pageCategory03 from "../pages/pageCategory03.vue"
-import supplyDemand01 from "../pages/supplyDemand01.vue"
-import supplyDemand02 from "../pages/supplyDemand02.vue"
-import supplyDemand03 from "../pages/supplyDemand03.vue"
-import energyCenter01 from "../pages/energyCenter01.vue"
-import energyCenter02 from "../pages/energyCenter02.vue"
-import energyCenter03 from "../pages/energyCenter03.vue"
-import energyCenter04 from "../pages/energyCenter04.vue"
-import energyCenter05 from "../pages/energyCenter05.vue"
-import pageCategory04 from "../pages/pageCategory04.vue"
-import mainNet01 from "../pages/mainNet01.vue"
-import mainNet02 from "../pages/mainNet02.vue"
-import mainNet03 from "../pages/mainNet03.vue"
-import mainNet04 from "../pages/mainNet04.vue"
-import mainNet05 from "../pages/mainNet05.vue"
-import mainNet06 from "../pages/mainNet06.vue"
-import mainNet07 from "../pages/mainNet07.vue"
-import coordNet01 from "../pages/coordNet01.vue"
-import coordNet02 from "../pages/coordNet02.vue"
-import coordNet03 from "../pages/coordNet03.vue"
-import coordNet04 from "../pages/coordNet04.vue"
-import coordNet05 from "../pages/coordNet05.vue"
-import coordNet06 from "../pages/coordNet06.vue"
-import innovations from "../pages/innovations.vue"
-import experimentDevelop from "../pages/experimentDevelop.vue"
-
+// import pageCategory02 from "../pages/pageCategory02.vue"
+const assignNetwork01 = defineAsyncComponent(() => import("../pages/assignNetwork01.vue")) 
+// import assignNetwork01 from "../pages/assignNetwork01.vue"
+const assignNetwork02 = defineAsyncComponent(() => import("../pages/assignNetwork02.vue")) 
+// import assignNetwork02 from "../pages/assignNetwork02.vue"
+const pageCategory03 = defineAsyncComponent(() => import("../pages/pageCategory03.vue")) 
+// import pageCategory03 from "../pages/pageCategory03.vue"
+const supplyDemand01 = defineAsyncComponent(() => import("../pages/supplyDemand01.vue")) 
+// import supplyDemand01 from "../pages/supplyDemand01.vue"
+const supplyDemand02 = defineAsyncComponent(() => import("../pages/supplyDemand02.vue")) 
+// import supplyDemand02 from "../pages/supplyDemand02.vue"
+const supplyDemand03 = defineAsyncComponent(() => import("../pages/supplyDemand03.vue")) 
+// import supplyDemand03 from "../pages/supplyDemand03.vue"
+const energyCenter01 = defineAsyncComponent(() => import("../pages/energyCenter01.vue")) 
+// import energyCenter01 from "../pages/energyCenter01.vue"
+const energyCenter02 = defineAsyncComponent(() => import("../pages/energyCenter02.vue")) 
+// import energyCenter02 from "../pages/energyCenter02.vue"
+const energyCenter03 = defineAsyncComponent(() => import("../pages/energyCenter03.vue")) 
+// import energyCenter03 from "../pages/energyCenter03.vue"
+const energyCenter04 = defineAsyncComponent(() => import("../pages/energyCenter04.vue")) 
+// import energyCenter04 from "../pages/energyCenter04.vue"
+const energyCenter05 = defineAsyncComponent(() => import("../pages/energyCenter05.vue")) 
+// import energyCenter05 from "../pages/energyCenter05.vue"
+const pageCategory04 = defineAsyncComponent(() => import("../pages/pageCategory04.vue")) 
+// import pageCategory04 from "../pages/pageCategory04.vue"
+const mainNet01 = defineAsyncComponent(() => import("../pages/mainNet01.vue")) 
+// import mainNet01 from "../pages/mainNet01.vue"
+const mainNet02 = defineAsyncComponent(() => import("../pages/mainNet02.vue")) 
+// import mainNet02 from "../pages/mainNet02.vue"
+const mainNet03 = defineAsyncComponent(() => import("../pages/mainNet03.vue")) 
+// import mainNet03 from "../pages/mainNet03.vue"
+const mainNet04 = defineAsyncComponent(() => import("../pages/mainNet04.vue")) 
+// import mainNet04 from "../pages/mainNet04.vue"
+const mainNet05 = defineAsyncComponent(() => import("../pages/mainNet05.vue")) 
+// import mainNet05 from "../pages/mainNet05.vue"
+const mainNet06 = defineAsyncComponent(() => import("../pages/mainNet06.vue")) 
+// import mainNet06 from "../pages/mainNet06.vue"
+const mainNet07 = defineAsyncComponent(() => import("../pages/mainNet07.vue")) 
+// import mainNet07 from "../pages/mainNet07.vue"
+const coordNet01 = defineAsyncComponent(() => import("../pages/coordNet01.vue")) 
+// import coordNet01 from "../pages/coordNet01.vue"
+const coordNet02 = defineAsyncComponent(() => import("../pages/coordNet02.vue")) 
+// import coordNet02 from "../pages/coordNet02.vue"
+const coordNet03 = defineAsyncComponent(() => import("../pages/coordNet03.vue")) 
+// import coordNet03 from "../pages/coordNet03.vue"
+const coordNet04 = defineAsyncComponent(() => import("../pages/coordNet04.vue")) 
+// import coordNet04 from "../pages/coordNet04.vue"
+const coordNet05 = defineAsyncComponent(() => import("../pages/coordNet05.vue")) 
+// import coordNet05 from "../pages/coordNet05.vue"
+const coordNet06 = defineAsyncComponent(() => import("../pages/coordNet06.vue")) 
+// import coordNet06 from "../pages/coordNet06.vue"
+const innovations = defineAsyncComponent(() => import("../pages/innovations.vue")) 
+// import innovations from "../pages/innovations.vue"
+const experimentDevelop = defineAsyncComponent(() => import("../pages/experimentDevelop.vue")) 
+// import experimentDevelop from "../pages/experimentDevelop.conste= () => import()
 const modules = [Mousewheel, Pagination, Autoplay, Virtual]
 // swiper实例
 const homeSwiper = ref(null)
@@ -183,7 +219,7 @@ const onSlideChange = (swiper) => {
   }, 2000)
 }
 
-const pageTo = (idx) => {
+const pageTo = (idx: number): void => {
   homeSwiper.value.slideTo(idx)
 }
 
@@ -210,7 +246,7 @@ const removeEventListener = () => {
 }
 
 // 切换轮播方式
-const toggleMethods = (methods: string) => {
+const toggleMethods = (methods: string): void => {
   switch (methods) {
     case "autoplay":
       removeEventListener()
